@@ -1,0 +1,28 @@
+<div class="card">
+  <div class="card-header" role="tab">
+    <h5 class="mb-0">
+      <a (click)=this._toggle() data-toggle="collapse" aria-expanded="true" aria-controls="accordion-1 .item-" [href]=this.href >{{this.title}}</a>
+    </h5>
+  </div>
+  <div [class]="true==this.toggled ? 'collapse show' : 'collapse item-1'" role="tabpanel" >
+    <div class="card-body">
+      <p class="card-text">
+        Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+        dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+      </p>
+      <app-carousel [iterativeNumber]=this.iterativeNumber [images]="[
+        ['assets/img/img_001.jpg','image1'],
+        ['assets/img/img_002.jpg','image2'],
+        ['assets/img/img_003.jpg','image3']
+      ]"></app-carousel>
+      <hr>
+      <h3 class="text-primary">Process</h3>
+      <p class="card-text">
+        Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+        dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+      </p>
+    </div>
+  </div>
+
+</div>
+

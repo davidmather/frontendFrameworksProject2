@@ -1,0 +1,7 @@
+<ul class="nav nav-tabs flex-column text-left">
+  <li class="nav-item"  *ngFor="let link of links">
+    <a class="nav-link" href="{{link.href}}" (click)="_sendDataToParent(link.href)">
+      <i class="{{link.icon}}"></i>{{link.text}}
+    </a>
+  </li>
+</ul>

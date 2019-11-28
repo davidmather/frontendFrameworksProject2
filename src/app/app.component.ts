@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  dataFromChild;
+  activeSection = 'PortfolioOfWork';
+  eventFromChild(data) {
+    data = data.replace('#', '');
+    this.activeSection = data;
+    console.log(data);
+  }
 }
